@@ -13,4 +13,9 @@ public class TestUtil {
 
   @Test
   public void example() { assertTrue(true); }
+  
+    @Test
+    public void testSingleElement() {
+    assertFalse(c.compute(1));
+  }
 }
