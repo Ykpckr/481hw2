@@ -35,5 +35,10 @@ public class TestUtil {
   public void testContainsZero() {
     util.compute(1, 0, 3);
   }
+  @Test
+  public void testOddNumberOfElementsSumNotDivisibleByAny() {
+  Util util = new Util();
+  assertFalse(util.compute(2, -4, 5)); 
+}
 
 }
