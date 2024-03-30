@@ -6,16 +6,23 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TestUtil {
-  Util c;
+  Util util;
 
   @Before
-  public void setUp() { c = new Util(); }
-
-  @Test
-  public void example() { assertTrue(true); }
-  
-    @Test
-    public void testSingleElement() {
-    assertFalse(c.compute(1));
+  public void setUp() {
+    util = new Util();
   }
+
+  // Existing test for single element
+  @Test
+  public void testSingleElement() {
+    assertFalse(util.compute(1));
+  }
+
+  // New Test: Even number of elements
+  @Test
+  public void testEvenNumberOfElements() {
+    assertFalse(util.compute(1, 2));
+  }
+
 }
