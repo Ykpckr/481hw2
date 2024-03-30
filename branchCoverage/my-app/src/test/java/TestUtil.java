@@ -25,4 +25,15 @@ public class TestUtil {
     assertFalse(util.compute(1, 2));
   }
 
+  //sum is divisible by at least one element
+  @Test
+  public void testOddNumberOfElementsSumDivisible() {
+    assertTrue(util.compute(1, 2, -3, 4, -4));
+  }
+
+  @Test(expected = RuntimeException.class)
+  public void testContainsZero() {
+    util.compute(1, 0, 3);
+  }
+
 }
